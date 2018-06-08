@@ -6,16 +6,8 @@ $(document).ready(function() {
     var nestedArr = [];
     //var outPutArr = [];
 
-    if (isNaN(numb)) {
-      // outPutArr.push("Please enter real numbers only");
-      outPutString += "Please Enter REAL Numbers Only";
-    } else if (numb < 0) {
-      //  outPutArr.push("please enter positive numbers only");
-      outPutString = "Please Enter POSITIVE Numbers Only";
-    }
 
-
-    for (var i = 0; i < numb; i++) {
+    for (var i = 0; i < parseInt(numb)+1; i++) {
       numbArr.push(i.toString());
     }
     for (var a = 0; a < numbArr.length; a++) {
@@ -23,6 +15,8 @@ $(document).ready(function() {
       var singleNumbArr = singleNumb.split("");
       nestedArr.push(singleNumbArr);
     }
+
+
     for (var c = 0; c < nestedArr.length; c++){
       if (parseInt(nestedArr[c].join("").split(" ")) % 3 === 0 && parseInt(nestedArr[c].join("").split(" ")) !== 0) {
         //  outPutArr.push("I'm sorry, Dave. I'm afraid I can't do that.");
@@ -38,9 +32,18 @@ $(document).ready(function() {
         outPutString += nestedArr[c].join("") + "</br>"
       }
     }
-    //$("p#result").text(test);
 
-    //Used pure javaScript to output as a list
+
+    /*replace value of outPutString. allows computation on number/Non-number. must go at end of code */
+
+    if (isNaN(numb)) {
+      // outPutArr.push("Please enter real numbers only");
+      outPutString = "Please Enter REAL Numbers Only";
+    } else if (numb < 0) {
+      //  outPutArr.push("please enter positive numbers only");
+      outPutString = "Please Enter POSITIVE Numbers Only";
+    }
+    //$("p#result").text(outPutArr;
     document.getElementById("result").innerHTML = outPutString;
   }
 
@@ -48,8 +51,6 @@ $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
     var numb = $("input#number").val().trim();
-
-    outPutString = "";  // reset each time
     outPut(numb);
 
   });
