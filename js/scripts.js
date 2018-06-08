@@ -20,15 +20,19 @@ var test = [];
 var tests = [];
 
 for (var c = 0; c < nestedArr.length; c++){
-  if (nestedArr[c].includes('0')) {
+
+ if (parseInt(nestedArr[c]) % 3 === 0 && parseInt(nestedArr[c]) !== 0) {
+    test.push("sorry");
+    tests += "sorry" + "</br>"
+
+ } else if (nestedArr[c].includes('0')) {
     test.push("beep");
     tests += "beep" + "</br>"
   } else {
     test.push(nestedArr[c].join(""));
     tests += nestedArr[c].join("") + "</br>"
   }
-
-  }
+ }
 
 
 document.getElementById("test").innerHTML = test;
