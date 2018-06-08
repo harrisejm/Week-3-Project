@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a webpage takes a number and will return a range of numbers from 0 to the chosen number. If the the "I'm sorry, Dave. I'm afraid I can't do that." if you
+This is a webpage that takes a number and will return a range of numbers from 0 to the chosen number. The returned numbers will be translated into robot.
 
 ## Specifications
 
@@ -20,7 +20,7 @@ This is a webpage takes a number and will return a range of numbers from 0 to th
     - Example input: -2345
     - Example output: "Please Enter REAL Numbers Only"
 
-- 3.) All numbers 0 will be replaced with the text "Beep!" unless specification 4 or 5 are true.
+- 3.) All numbers 0 will be replaced with the text "Beep!" unless specifications 4 or 5 are true.
 
     - Example input: 0
     - Example output: "Beep!"
@@ -30,6 +30,7 @@ This is a webpage takes a number and will return a range of numbers from 0 to th
     - Example output: ""
 
 - 5.) All numbers that are divisible by 3 will be replaced by the text "I'm sorry, Dave. I'm afraid I can't do that."
+
 
 ## Setup/Installation Requirements
 

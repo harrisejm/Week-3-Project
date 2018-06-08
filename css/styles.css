@@ -36,3 +36,12 @@ div.center {
   margin-right: auto;
   margin-left: auto;
 }
+
+div.title {
+  font-family: Lucida;
+}
+
+p#result {
+  font-size: 20px;
+  font-family: fantasy;
+}
