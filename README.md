@@ -10,16 +10,26 @@ This is a webpage takes a number and will return a range of numbers from 0 to th
 
 ## Specifications
 
-- 1.) All numbers 0 will be replaced with the text "Beep!" unless specification 2 or 3 are true.
+- 1.) Non-numbers that are inputed will receive the message: "Please Enter REAL Numbers Only".
+
+    - Example input: wsdgfgr
+    - Example output: "Please Enter REAL Numbers Only"
+
+- 2.) Negative numbers that are inputed will receive the message: "Please Enter POSITIVE Numbers Only"
+
+    - Example input: -2345
+    - Example output: "Please Enter REAL Numbers Only"
+
+- 3.) All numbers 0 will be replaced with the text "Beep!" unless specification 4 or 5 are true.
 
     - Example input: 0
     - Example output: "Beep!"
 
-- 2.) All numbers with a 1 will be replaced with the text "Boop!" unless specification 3 is true.
+- 4.) All numbers with a 1 will be replaced with the text "Boop!" unless specification 5 is true.
     - Example input: 10
     - Example output: ""
 
-- 3.) All numbers that are divisible by 3 will be replaced by the text "I'm sorry, Dave. I'm afraid I can't do that."
+- 5.) All numbers that are divisible by 3 will be replaced by the text "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Setup/Installation Requirements
 

@@ -1,19 +1,20 @@
 $(document).ready(function() {
   var outPut = function(numb){
-     var numbArr = [];
-     var nestedArr = [];
-     //var outPutArr = [];
-     var outPutString = "";
+    var numbArr = [];
+    var nestedArr = [];
+    //var outPutArr = [];
 
+
+    var outPutString = "";
     if (isNaN(numb)) {
       // outPutArr.push("Please enter real numbers only");
-       outPutString += "Please Enter REAL Numbers Only";
+      outPutString += "Please Enter REAL Numbers Only";
     } else if (numb < 0) {
-    //  outPutArr.push("please enter positive numbers only");
-       outPutString = "Please Enter POSITIVE Numbers Only";
+      //  outPutArr.push("please enter positive numbers only");
+      outPutString = "Please Enter POSITIVE Numbers Only";
     } else if (!numb) {
-    return // if you submit a blank field, treats it as a "0" and outputs beep.
-  }
+      return // if you submit a blank field, treats it as a "0" and outputs beep.
+    }
 
 
     for (var i = 0; i < numb+1; i++) {
@@ -40,13 +41,16 @@ $(document).ready(function() {
       }
     }
     //$("p#result").text(test);
+
     //Used javaScript to output as a list that can be replaced
     document.getElementById("result").innerHTML = outPutString;
   }
+
+
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
     var numb = $("input#number").val().trim();
     outPut(numb);
-  });
 
+  });
 });
