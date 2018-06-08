@@ -6,7 +6,20 @@
 
 ## Description
 
-This is a mock webpage that was created for the second Epicodus assessment.
+This is a webpage takes a number and will return a range of numbers from 0 to the chosen number. If the the "I'm sorry, Dave. I'm afraid I can't do that." if you
+
+## Specifications
+
+- 1.) All numbers 0 will be replaced with the text "Beep!" unless specification 2 or 3 are true.
+
+    - Example input: 0
+    - Example output: "Beep!"
+
+- 2.) All numbers with a 1 will be replaced with the text "Boop!" unless specification 3 is true.
+    - Example input: 10
+    - Example output: ""
+
+- 3.) All numbers that are divisible by 3 will be replaced by the text "I'm sorry, Dave. I'm afraid I can't do that."
 
 ## Setup/Installation Requirements
 
