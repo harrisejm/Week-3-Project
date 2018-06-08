@@ -4,7 +4,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .jumbotron {
   margin-top: 40px;
 }
@@ -12,18 +11,14 @@ body {
 div.jumbotron {
   height: 300px;
 }
-
 img.robot {
   float: left;
   margin-right: 50px;
 
 }
-
 div.outPut {
   margin-top: 30px;
 }
-
-
 button {
   background-color: #1E90FF;
   box-shadow: 5px 5px 5px black;
