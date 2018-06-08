@@ -1,4 +1,4 @@
-var numb = 10;
+var numb = 12;
 //var stringLength = numb.toString().length;
 
 
@@ -17,15 +17,20 @@ for (var a = 0; a < numbArr.length; a++) {
 }
 
 var test = [];
+var tests = [];
 
-for (var c = 0; c < nestedArr[c].length; c++){
-  for (var b = 0; b < nestedArr.length; b++) {
-    if ( )
-    test.push((nestedArr[b]).length);
+for (var c = 0; c < nestedArr.length; c++){
+  if (nestedArr[c].includes('0')) {
+    test.push("beep");
+    tests += "beep" + "</br>"
+  } else {
+    test.push(nestedArr[c].join(""));
+    tests += nestedArr[c].join("") + "</br>"
   }
-}
+
+  }
 
 
-
-document.getElementById("test").innerHTML = test.length;
- document.getElementById("test1").innerHTML = test;
+document.getElementById("test").innerHTML = test;
+document.getElementById("test1").innerHTML = tests;
+document.getElementById("test2").innerHTML = nestedArr;
